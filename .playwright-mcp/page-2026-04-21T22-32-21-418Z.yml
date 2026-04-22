@@ -1,0 +1,90 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: O
+        - generic [ref=e7]: Admin Panel
+        - generic [ref=e8]: WPC-2026-00111
+      - link "Preview Offer" [ref=e9] [cursor=pointer]:
+        - /url: /
+        - img [ref=e10]
+        - text: Preview Offer
+      - button "Save & Publish" [active] [ref=e14]:
+        - img [ref=e15]
+        - text: Save & Publish
+    - complementary [ref=e19]:
+      - button "Offer Info" [ref=e20]:
+        - img [ref=e21]
+        - text: Offer Info
+      - button "Products" [ref=e24]:
+        - img [ref=e25]
+        - text: Products
+      - button "Company" [ref=e29]:
+        - img [ref=e30]
+        - text: Company
+      - button "Sales Contact" [ref=e34]:
+        - img [ref=e35]
+        - text: Sales Contact
+      - button "Pricing" [ref=e39]:
+        - img [ref=e40]
+        - text: Pricing
+      - button "Commitments" [ref=e42]:
+        - img [ref=e43]
+        - text: Commitments
+      - button "Visibility" [ref=e46]:
+        - img [ref=e47]
+        - text: Visibility
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - heading "Offer Info" [level=1] [ref=e55]
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "Client" [level=3] [ref=e59]
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]: Client Name
+                - textbox [ref=e64]: ELC Energy
+              - generic [ref=e65]:
+                - generic [ref=e66]: Recipient Name
+                - textbox [ref=e67]: ahmed
+              - generic [ref=e68]:
+                - generic [ref=e69]: Client Logo URLleave blank for placeholder
+                - textbox "https://…" [ref=e70]
+              - generic [ref=e71]:
+                - generic [ref=e72]: Proposal Number
+                - textbox [ref=e73]: WPC-2026-00111
+          - generic [ref=e74]:
+            - heading "Terms & Dates" [level=3] [ref=e76]
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: Term (months)
+                - spinbutton [ref=e81]: "36"
+              - generic [ref=e82]:
+                - generic [ref=e83]: Currency
+                - combobox [ref=e84] [cursor=pointer]:
+                  - option "USD" [selected]
+                  - option "EUR"
+                  - option "GBP"
+                  - option "SAR"
+                  - option "AED"
+                  - option "EGP"
+              - generic [ref=e85]:
+                - generic [ref=e86]: Created Date
+                - textbox [ref=e87]: 2026-04-19
+              - generic [ref=e88]:
+                - generic [ref=e89]: Valid Until
+                - textbox [ref=e90]: 2026-05-19
+          - generic [ref=e91]:
+            - heading "Tax Note" [level=3] [ref=e93]
+            - generic [ref=e95]:
+              - generic [ref=e96]: Tax / payment noteshown below the pricing table
+              - textbox [ref=e97]: "Prices shown exclude VAT and applicable taxes. Accepted payment methods: Stripe, bank transfer, or agreed terms."
+        - generic [ref=e98]:
+          - paragraph [ref=e99]:
+            - text: Changes are saved to local state. Connect to your API in
+            - code [ref=e100]: ProposalPage.jsx
+            - text: .
+          - button "Save & Publish" [ref=e101]:
+            - img [ref=e102]
+            - text: Save & Publish
+  - status [ref=e111]: Offer updated — changes are live.

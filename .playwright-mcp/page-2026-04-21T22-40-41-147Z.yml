@@ -1,0 +1,478 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: O
+      - generic [ref=e7]: Admin Panel
+      - generic [ref=e8]: WPC-2026-00111
+    - link "Preview Offer" [ref=e9] [cursor=pointer]:
+      - /url: /
+      - img [ref=e10]
+      - text: Preview Offer
+    - button "Save & Publish" [ref=e14]:
+      - img [ref=e15]
+      - text: Save & Publish
+  - complementary [ref=e19]:
+    - button "Offer Info" [ref=e20]:
+      - img [ref=e21]
+      - text: Offer Info
+    - button "Products" [active] [ref=e24]:
+      - img [ref=e25]
+      - text: Products
+    - button "Company" [ref=e29]:
+      - img [ref=e30]
+      - text: Company
+    - button "Sales Contact" [ref=e34]:
+      - img [ref=e35]
+      - text: Sales Contact
+    - button "Pricing" [ref=e39]:
+      - img [ref=e40]
+      - text: Pricing
+    - button "Commitments" [ref=e42]:
+      - img [ref=e43]
+      - text: Commitments
+    - button "Visibility" [ref=e46]:
+      - img [ref=e47]
+      - text: Visibility
+  - main [ref=e51]:
+    - generic [ref=e52]:
+      - heading "Products" [level=1] [ref=e106]
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - 'heading "Product: Posta Email Hosting" [level=3] [ref=e111]'
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]: Product Name
+              - textbox [ref=e116]: Posta Email Hosting
+            - generic [ref=e117]:
+              - generic [ref=e118]: Icon
+              - combobox [ref=e119] [cursor=pointer]:
+                - option "Mail" [selected]
+                - option "Shield"
+                - option "Zap"
+                - option "Lock"
+                - option "Link2"
+                - option "Users"
+                - option "Globe"
+                - option "Headphones"
+                - option "Target"
+                - option "ShieldCheck"
+                - option "Activity"
+                - option "Building2"
+                - option "Settings2"
+                - option "Check"
+                - option "Star"
+                - option "Award"
+                - option "Database"
+                - option "Cloud"
+                - option "Server"
+                - option "Cpu"
+                - option "Wifi"
+                - option "Clock"
+                - option "AlertCircle"
+                - option "BarChart2"
+                - option "Package"
+                - option "Layers"
+                - option "Key"
+                - option "FileText"
+            - generic [ref=e121]:
+              - generic [ref=e122]: Subtitle
+              - textbox [ref=e123]: Enterprise Email Security & Hosting
+            - generic [ref=e125]:
+              - generic [ref=e126]: Description
+              - textbox [ref=e127]: Posta delivers bank-grade email security with 99.9% uptime, protecting your organization from phishing, malware, and ransomware while ensuring seamless communication across your team.
+        - generic [ref=e128]:
+          - heading "Content Blocks" [level=3] [ref=e130]
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - paragraph [ref=e134]: Select content blocks — 3 chosen
+              - generic [ref=e135]:
+                - button "✓ Feature Cards Icon + title + description cards in a responsive grid. Best for capability breakdowns." [ref=e136]:
+                  - generic [ref=e137]:
+                    - img [ref=e139]
+                    - generic [ref=e144]: ✓
+                  - paragraph [ref=e145]: Feature Cards
+                  - paragraph [ref=e146]: Icon + title + description cards in a responsive grid. Best for capability breakdowns.
+                - button "✓ Why Choose List Bulleted list of differentiators. Best for competitive positioning." [ref=e147]:
+                  - generic [ref=e148]:
+                    - img [ref=e150]
+                    - generic [ref=e153]: ✓
+                  - paragraph [ref=e154]: Why Choose List
+                  - paragraph [ref=e155]: Bulleted list of differentiators. Best for competitive positioning.
+                - button "Key Metrics Metric strip with quantified proof points. Best for showing numbers." [ref=e156] [cursor=pointer]:
+                  - img [ref=e159]
+                  - paragraph [ref=e160]: Key Metrics
+                  - paragraph [ref=e161]: Metric strip with quantified proof points. Best for showing numbers.
+                - button "✓ Comparison Table Side-by-side comparison vs. competitors. First column is always your product." [ref=e162]:
+                  - generic [ref=e163]:
+                    - img [ref=e165]
+                    - generic [ref=e167]: ✓
+                  - paragraph [ref=e168]: Comparison Table
+                  - paragraph [ref=e169]: Side-by-side comparison vs. competitors. First column is always your product.
+                - button "Use Cases Persona/scenario cards showing who benefits and how." [ref=e170] [cursor=pointer]:
+                  - img [ref=e173]
+                  - paragraph [ref=e178]: Use Cases
+                  - paragraph [ref=e179]: Persona/scenario cards showing who benefits and how.
+            - generic [ref=e180]:
+              - paragraph [ref=e181]: Configure selected blocks
+              - generic [ref=e182]:
+                - generic [ref=e183]:
+                  - generic [ref=e184]: "1"
+                  - img [ref=e186]
+                  - generic [ref=e191]: Feature Cards
+                  - generic [ref=e192]:
+                    - button "Move up" [ref=e193]:
+                      - img [ref=e194]
+                    - button "Move down" [ref=e196]:
+                      - img [ref=e197]
+                    - button "Remove block" [ref=e199]:
+                      - img [ref=e200]
+                - generic [ref=e203]:
+                  - generic [ref=e204]:
+                    - generic [ref=e205]: Section headingoptional
+                    - textbox "e.g. Core Capabilities" [ref=e206]: Core Capabilities
+                  - generic [ref=e207]:
+                    - generic [ref=e208]:
+                      - generic [ref=e209]:
+                        - generic [ref=e210]: Item 1
+                        - button "Remove item" [ref=e211]:
+                          - img [ref=e212]
+                      - generic [ref=e215]:
+                        - generic [ref=e216]:
+                          - generic [ref=e217]: Icon
+                          - combobox [ref=e218] [cursor=pointer]:
+                            - option "Mail"
+                            - option "Shield" [selected]
+                            - option "Zap"
+                            - option "Lock"
+                            - option "Link2"
+                            - option "Users"
+                            - option "Globe"
+                            - option "Headphones"
+                            - option "Target"
+                            - option "ShieldCheck"
+                            - option "Activity"
+                            - option "Building2"
+                            - option "Settings2"
+                            - option "Check"
+                            - option "Star"
+                            - option "Award"
+                            - option "Database"
+                            - option "Cloud"
+                            - option "Server"
+                            - option "Cpu"
+                            - option "Wifi"
+                            - option "Clock"
+                            - option "AlertCircle"
+                            - option "BarChart2"
+                            - option "Package"
+                            - option "Layers"
+                            - option "Key"
+                            - option "FileText"
+                        - generic [ref=e219]:
+                          - generic [ref=e220]: Title
+                          - textbox [ref=e221]: Advanced Threat Protection
+                      - generic [ref=e222]:
+                        - generic [ref=e223]: Description
+                        - textbox [ref=e224]: Multi-layer spam filtering with 99.9% accuracy, zero-day threat detection, phishing & malware protection, and ransomware prevention with AI-powered sandboxing.
+                    - generic [ref=e225]:
+                      - generic [ref=e226]:
+                        - generic [ref=e227]: Item 2
+                        - button "Remove item" [ref=e228]:
+                          - img [ref=e229]
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - generic [ref=e234]: Icon
+                          - combobox [ref=e235] [cursor=pointer]:
+                            - option "Mail"
+                            - option "Shield"
+                            - option "Zap" [selected]
+                            - option "Lock"
+                            - option "Link2"
+                            - option "Users"
+                            - option "Globe"
+                            - option "Headphones"
+                            - option "Target"
+                            - option "ShieldCheck"
+                            - option "Activity"
+                            - option "Building2"
+                            - option "Settings2"
+                            - option "Check"
+                            - option "Star"
+                            - option "Award"
+                            - option "Database"
+                            - option "Cloud"
+                            - option "Server"
+                            - option "Cpu"
+                            - option "Wifi"
+                            - option "Clock"
+                            - option "AlertCircle"
+                            - option "BarChart2"
+                            - option "Package"
+                            - option "Layers"
+                            - option "Key"
+                            - option "FileText"
+                        - generic [ref=e236]:
+                          - generic [ref=e237]: Title
+                          - textbox [ref=e238]: Business Continuity
+                      - generic [ref=e239]:
+                        - generic [ref=e240]: Description
+                        - textbox [ref=e241]: 99.9% uptime SLA with automatic failover, email archiving & e-discovery tools, disaster recovery included, and geo-redundant data centers.
+                    - generic [ref=e242]:
+                      - generic [ref=e243]:
+                        - generic [ref=e244]: Item 3
+                        - button "Remove item" [ref=e245]:
+                          - img [ref=e246]
+                      - generic [ref=e249]:
+                        - generic [ref=e250]:
+                          - generic [ref=e251]: Icon
+                          - combobox [ref=e252] [cursor=pointer]:
+                            - option "Mail"
+                            - option "Shield"
+                            - option "Zap"
+                            - option "Lock" [selected]
+                            - option "Link2"
+                            - option "Users"
+                            - option "Globe"
+                            - option "Headphones"
+                            - option "Target"
+                            - option "ShieldCheck"
+                            - option "Activity"
+                            - option "Building2"
+                            - option "Settings2"
+                            - option "Check"
+                            - option "Star"
+                            - option "Award"
+                            - option "Database"
+                            - option "Cloud"
+                            - option "Server"
+                            - option "Cpu"
+                            - option "Wifi"
+                            - option "Clock"
+                            - option "AlertCircle"
+                            - option "BarChart2"
+                            - option "Package"
+                            - option "Layers"
+                            - option "Key"
+                            - option "FileText"
+                        - generic [ref=e253]:
+                          - generic [ref=e254]: Title
+                          - textbox [ref=e255]: Compliance & Security
+                      - generic [ref=e256]:
+                        - generic [ref=e257]: Description
+                        - textbox [ref=e258]: End-to-end encryption (TLS/SSL), Data Loss Prevention (DLP), comprehensive audit logs & reporting, GDPR/NCA/NESA compliance support, and 2FA.
+                    - generic [ref=e259]:
+                      - generic [ref=e260]:
+                        - generic [ref=e261]: Item 4
+                        - button "Remove item" [ref=e262]:
+                          - img [ref=e263]
+                      - generic [ref=e266]:
+                        - generic [ref=e267]:
+                          - generic [ref=e268]: Icon
+                          - combobox [ref=e269] [cursor=pointer]:
+                            - option "Mail"
+                            - option "Shield"
+                            - option "Zap"
+                            - option "Lock"
+                            - option "Link2" [selected]
+                            - option "Users"
+                            - option "Globe"
+                            - option "Headphones"
+                            - option "Target"
+                            - option "ShieldCheck"
+                            - option "Activity"
+                            - option "Building2"
+                            - option "Settings2"
+                            - option "Check"
+                            - option "Star"
+                            - option "Award"
+                            - option "Database"
+                            - option "Cloud"
+                            - option "Server"
+                            - option "Cpu"
+                            - option "Wifi"
+                            - option "Clock"
+                            - option "AlertCircle"
+                            - option "BarChart2"
+                            - option "Package"
+                            - option "Layers"
+                            - option "Key"
+                            - option "FileText"
+                        - generic [ref=e270]:
+                          - generic [ref=e271]: Title
+                          - textbox [ref=e272]: Seamless Integration
+                      - generic [ref=e273]:
+                        - generic [ref=e274]: Description
+                        - textbox [ref=e275]: Microsoft 365 & Outlook compatible, mobile apps for iOS & Android, ActiveSync support, free migration assistance, and API access for automation.
+                    - button "Add feature" [ref=e276]:
+                      - img [ref=e277]
+                      - text: Add feature
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - generic [ref=e280]: "2"
+                  - img [ref=e282]
+                  - generic [ref=e284]: Comparison Table
+                  - generic [ref=e285]:
+                    - button "Move up" [ref=e286]:
+                      - img [ref=e287]
+                    - button "Move down" [ref=e289]:
+                      - img [ref=e290]
+                    - button "Remove block" [ref=e292]:
+                      - img [ref=e293]
+                - generic [ref=e296]:
+                  - generic [ref=e297]:
+                    - generic [ref=e298]: Section headingoptional
+                    - textbox "e.g. Core Capabilities" [ref=e299]: How We Compare
+                  - generic [ref=e300]:
+                    - generic [ref=e301]:
+                      - generic [ref=e302]:
+                        - generic [ref=e303]: Competitor columnsFirst column is your product (always highlighted)
+                        - generic [ref=e304]:
+                          - generic [ref=e305]:
+                            - generic [ref=e306]: "1"
+                            - textbox [ref=e307]: WorldPosta
+                          - generic [ref=e308]:
+                            - generic [ref=e309]: "2"
+                            - textbox [ref=e310]: Microsoft 365
+                            - button "Remove column" [ref=e311]:
+                              - img [ref=e312]
+                          - generic [ref=e315]:
+                            - generic [ref=e316]: "3"
+                            - textbox [ref=e317]: Google Workspace
+                            - button "Remove column" [ref=e318]:
+                              - img [ref=e319]
+                      - button "Add competitor column" [ref=e322]:
+                        - img [ref=e323]
+                        - text: Add competitor column
+                    - generic [ref=e324]:
+                      - generic [ref=e325]:
+                        - generic [ref=e326]: Feature rows
+                        - generic [ref=e327]:
+                          - generic [ref=e328]:
+                            - generic [ref=e329]:
+                              - textbox "Feature name…" [ref=e330]: Regional data centers (Egypt, KSA, UAE)
+                              - button "Remove row" [ref=e331]:
+                                - img [ref=e332]
+                            - generic [ref=e335]:
+                              - button "✓ WorldPosta" [ref=e336]:
+                                - generic [ref=e338]: ✓
+                                - text: WorldPosta
+                              - button "Microsoft 365" [ref=e339]: Microsoft 365
+                              - button "Google Workspace" [ref=e341]: Google Workspace
+                          - generic [ref=e343]:
+                            - generic [ref=e344]:
+                              - textbox "Feature name…" [ref=e345]: NCA & NESA compliance expertise
+                              - button "Remove row" [ref=e346]:
+                                - img [ref=e347]
+                            - generic [ref=e350]:
+                              - button "✓ WorldPosta" [ref=e351]:
+                                - generic [ref=e353]: ✓
+                                - text: WorldPosta
+                              - button "Microsoft 365" [ref=e354]: Microsoft 365
+                              - button "Google Workspace" [ref=e356]: Google Workspace
+                          - generic [ref=e358]:
+                            - generic [ref=e359]:
+                              - textbox "Feature name…" [ref=e360]: Arabic interface & native-language support
+                              - button "Remove row" [ref=e361]:
+                                - img [ref=e362]
+                            - generic [ref=e365]:
+                              - button "✓ WorldPosta" [ref=e366]:
+                                - generic [ref=e368]: ✓
+                                - text: WorldPosta
+                              - button "Microsoft 365" [ref=e369]: Microsoft 365
+                              - button "Google Workspace" [ref=e371]: Google Workspace
+                          - generic [ref=e373]:
+                            - generic [ref=e374]:
+                              - textbox "Feature name…" [ref=e375]: 99.9% uptime SLA with auto-failover
+                              - button "Remove row" [ref=e376]:
+                                - img [ref=e377]
+                            - generic [ref=e380]:
+                              - button "✓ WorldPosta" [ref=e381]:
+                                - generic [ref=e383]: ✓
+                                - text: WorldPosta
+                              - button "✓ Microsoft 365" [ref=e384]:
+                                - generic [ref=e386]: ✓
+                                - text: Microsoft 365
+                              - button "✓ Google Workspace" [ref=e387]:
+                                - generic [ref=e389]: ✓
+                                - text: Google Workspace
+                          - generic [ref=e390]:
+                            - generic [ref=e391]:
+                              - textbox "Feature name…" [ref=e392]: Dedicated account manager included
+                              - button "Remove row" [ref=e393]:
+                                - img [ref=e394]
+                            - generic [ref=e397]:
+                              - button "✓ WorldPosta" [ref=e398]:
+                                - generic [ref=e400]: ✓
+                                - text: WorldPosta
+                              - button "Microsoft 365" [ref=e401]: Microsoft 365
+                              - button "Google Workspace" [ref=e403]: Google Workspace
+                          - generic [ref=e405]:
+                            - generic [ref=e406]:
+                              - textbox "Feature name…" [ref=e407]: 30% lower cost vs. international providers
+                              - button "Remove row" [ref=e408]:
+                                - img [ref=e409]
+                            - generic [ref=e412]:
+                              - button "✓ WorldPosta" [ref=e413]:
+                                - generic [ref=e415]: ✓
+                                - text: WorldPosta
+                              - button "Microsoft 365" [ref=e416]: Microsoft 365
+                              - button "Google Workspace" [ref=e418]: Google Workspace
+                      - button "Add feature row" [ref=e420]:
+                        - img [ref=e421]
+                        - text: Add feature row
+              - generic [ref=e422]:
+                - generic [ref=e423]:
+                  - generic [ref=e424]: "3"
+                  - img [ref=e426]
+                  - generic [ref=e429]: Why Choose List
+                  - generic [ref=e430]:
+                    - button "Move up" [ref=e431]:
+                      - img [ref=e432]
+                    - button "Move down" [ref=e434]:
+                      - img [ref=e435]
+                    - button "Remove block" [ref=e437]:
+                      - img [ref=e438]
+                - generic [ref=e441]:
+                  - generic [ref=e442]:
+                    - generic [ref=e443]: Section headingoptional
+                    - textbox "e.g. Core Capabilities" [ref=e444]: Why WorldPosta?
+                  - generic [ref=e445]:
+                    - generic [ref=e446]:
+                      - generic [ref=e447]: "1"
+                      - textbox "Differentiator text…" [ref=e448]: Regional data centers in Egypt, KSA & UAE for low latency and compliance
+                      - button "Remove" [ref=e449]:
+                        - img [ref=e450]
+                    - generic [ref=e453]:
+                      - generic [ref=e454]: "2"
+                      - textbox "Differentiator text…" [ref=e455]: Full Arabic & English interface with native-speaking support team
+                      - button "Remove" [ref=e456]:
+                        - img [ref=e457]
+                    - generic [ref=e460]:
+                      - generic [ref=e461]: "3"
+                      - textbox "Differentiator text…" [ref=e462]: NCA and NESA compliance expertise — we handle the regulations so you don't have to
+                      - button "Remove" [ref=e463]:
+                        - img [ref=e464]
+                    - generic [ref=e467]:
+                      - generic [ref=e468]: "4"
+                      - textbox "Differentiator text…" [ref=e469]: 30% lower cost than international providers like Microsoft or Google
+                      - button "Remove" [ref=e470]:
+                        - img [ref=e471]
+                    - generic [ref=e474]:
+                      - generic [ref=e475]: "5"
+                      - textbox "Differentiator text…" [ref=e476]: Dedicated account manager included with every subscription
+                      - button "Remove" [ref=e477]:
+                        - img [ref=e478]
+                    - button "Add item" [ref=e481]:
+                      - img [ref=e482]
+                      - text: Add item
+              - button "Add another section" [ref=e484]:
+                - img [ref=e485]
+                - text: Add another section
+      - generic [ref=e98]:
+        - paragraph [ref=e99]:
+          - text: Changes are saved to local state. Connect to your API in
+          - code [ref=e100]: ProposalPage.jsx
+          - text: .
+        - button "Save & Publish" [ref=e101]:
+          - img [ref=e102]
+          - text: Save & Publish

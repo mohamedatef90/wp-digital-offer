@@ -1,0 +1,342 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - link "Skip to sign proposal" [ref=e5] [cursor=pointer]:
+      - /url: "#sign"
+    - generic [ref=e6]: O
+    - generic [ref=e7]: WorldPosta Technology LLC
+    - generic [ref=e8]:
+      - link "Pricing" [ref=e9] [cursor=pointer]:
+        - /url: "#pricing"
+      - link "Sign" [ref=e10] [cursor=pointer]:
+        - /url: "#sign"
+    - generic [ref=e11]: For ahmed
+  - generic [ref=e12]:
+    - generic [ref=e14]:
+      - generic [ref=e15]: Proposal · WPC-2026-00111
+      - generic "Client logo placeholder" [ref=e18]:
+        - generic [ref=e19]: Logo
+      - heading "Prepared for TEST COMPANY XYZ" [level=1] [ref=e20]:
+        - text: Prepared for
+        - text: TEST COMPANY XYZ
+      - paragraph [ref=e21]: We've prepared a tailored proposal for your review. Explore the details below and let us know if you have any questions.
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]: 36mo
+          - generic [ref=e25]: Term
+        - generic [ref=e26]:
+          - generic [ref=e27]: "1"
+          - generic [ref=e28]: Items
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - heading "Trusted By Leading Organizations" [level=2] [ref=e31]
+        - paragraph [ref=e32]: Enterprises worldwide rely on WorldPosta Technology LLC for their critical infrastructure
+      - generic [ref=e34]:
+        - generic "coca" [ref=e35]:
+          - img "coca" [ref=e36]
+        - generic [ref=e38]: Logo
+        - generic [ref=e40]: Logo
+        - generic [ref=e42]: Logo
+        - generic [ref=e44]: Logo
+        - generic [ref=e46]: Logo
+        - generic [ref=e48]: Logo
+        - generic [ref=e50]: Logo
+        - generic "coca" [ref=e51]:
+          - img "coca" [ref=e52]
+        - generic [ref=e54]: Logo
+        - generic [ref=e56]: Logo
+        - generic [ref=e58]: Logo
+        - generic [ref=e60]: Logo
+        - generic [ref=e62]: Logo
+        - generic [ref=e64]: Logo
+        - generic [ref=e66]: Logo
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - img [ref=e72]
+          - generic [ref=e74]:
+            - generic [ref=e75]: Quote Created
+            - generic [ref=e76]: Apr 19, 2026
+        - generic [ref=e78]:
+          - img [ref=e80]
+          - generic [ref=e82]:
+            - generic [ref=e83]: Valid Until
+            - generic [ref=e84]: May 19, 2026
+        - generic [ref=e85]: 26 days remaining
+      - 'meter "Proposal validity: 10% elapsed" [ref=e87]'
+    - generic [ref=e88]:
+      - heading "About WorldPosta" [level=2] [ref=e91]
+      - generic [ref=e92]:
+        - paragraph [ref=e94]: WorldPosta is the leading provider of enterprise-grade email security, cloud infrastructure, and cybersecurity services worldwide, with presence in 35 countries. We protect 1M+ users with 99.9% uptime and 24/7 expert support.
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - generic [ref=e97]: Protected Users
+            - generic [ref=e98]:
+              - img [ref=e99]
+              - generic [ref=e104]: 1M+
+          - generic [ref=e105]:
+            - generic [ref=e106]: Average Uptime
+            - generic [ref=e107]:
+              - img [ref=e108]
+              - generic [ref=e110]: 99.9%
+          - generic [ref=e111]:
+            - generic [ref=e112]: Countries Worldwide
+            - generic [ref=e113]:
+              - img [ref=e114]
+              - generic [ref=e117]: "35"
+          - generic [ref=e118]:
+            - generic [ref=e119]: Expert Support
+            - generic [ref=e120]:
+              - img [ref=e121]
+              - generic [ref=e123]: 24/7
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - img [ref=e126]
+            - text: ISO 27001 Certified
+          - generic [ref=e129]:
+            - img [ref=e130]
+            - text: SOC 2 Type II
+          - generic [ref=e133]:
+            - img [ref=e134]
+            - text: NCA Compliant (KSA)
+          - generic [ref=e137]:
+            - img [ref=e138]
+            - text: NESA Aligned (UAE)
+          - generic [ref=e141]:
+            - img [ref=e142]
+            - text: GDPR Ready
+    - generic [ref=e145]:
+      - heading "Product Details" [level=2] [ref=e148]
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - img [ref=e153]
+          - generic [ref=e156]:
+            - heading "Posta Email Hosting" [level=2] [ref=e157]
+            - paragraph [ref=e158]: Enterprise Email Security & Hosting
+            - paragraph [ref=e159]: Posta delivers bank-grade email security with 99.9% uptime, protecting your organization from phishing, malware, and ransomware while ensuring seamless communication across your team.
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - paragraph [ref=e162]: Core Capabilities
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - img [ref=e166]
+                - heading "Advanced Threat Protection" [level=3] [ref=e168]
+                - paragraph [ref=e169]: Multi-layer spam filtering with 99.9% accuracy, zero-day threat detection, phishing & malware protection, and ransomware prevention with AI-powered sandboxing.
+              - generic [ref=e170]:
+                - img [ref=e172]
+                - heading "Business Continuity" [level=3] [ref=e174]
+                - paragraph [ref=e175]: 99.9% uptime SLA with automatic failover, email archiving & e-discovery tools, disaster recovery included, and geo-redundant data centers.
+              - generic [ref=e176]:
+                - img [ref=e178]
+                - heading "Compliance & Security" [level=3] [ref=e181]
+                - paragraph [ref=e182]: End-to-end encryption (TLS/SSL), Data Loss Prevention (DLP), comprehensive audit logs & reporting, GDPR/NCA/NESA compliance support, and 2FA.
+              - generic [ref=e183]:
+                - img [ref=e185]
+                - heading "Seamless Integration" [level=3] [ref=e188]
+                - paragraph [ref=e189]: Microsoft 365 & Outlook compatible, mobile apps for iOS & Android, ActiveSync support, free migration assistance, and API access for automation.
+          - generic [ref=e190]:
+            - paragraph [ref=e191]: How We Compare
+            - table "How We Compare" [ref=e193]:
+              - rowgroup [ref=e194]:
+                - row "Feature WorldPosta Microsoft 365 Google Workspace" [ref=e195]:
+                  - columnheader "Feature" [ref=e196]
+                  - columnheader "WorldPosta" [ref=e197]
+                  - columnheader "Microsoft 365" [ref=e198]
+                  - columnheader "Google Workspace" [ref=e199]
+              - rowgroup [ref=e200]:
+                - row "Regional data centers (Egypt, KSA, UAE) Yes No No" [ref=e201]:
+                  - cell "Regional data centers (Egypt, KSA, UAE)" [ref=e202]
+                  - cell "Yes" [ref=e203]:
+                    - img "Yes" [ref=e204]
+                  - cell "No" [ref=e206]:
+                    - img "No" [ref=e207]
+                  - cell "No" [ref=e210]:
+                    - img "No" [ref=e211]
+                - row "NCA & NESA compliance expertise Yes No No" [ref=e214]:
+                  - cell "NCA & NESA compliance expertise" [ref=e215]
+                  - cell "Yes" [ref=e216]:
+                    - img "Yes" [ref=e217]
+                  - cell "No" [ref=e219]:
+                    - img "No" [ref=e220]
+                  - cell "No" [ref=e223]:
+                    - img "No" [ref=e224]
+                - row "Arabic interface & native-language support Yes No No" [ref=e227]:
+                  - cell "Arabic interface & native-language support" [ref=e228]
+                  - cell "Yes" [ref=e229]:
+                    - img "Yes" [ref=e230]
+                  - cell "No" [ref=e232]:
+                    - img "No" [ref=e233]
+                  - cell "No" [ref=e236]:
+                    - img "No" [ref=e237]
+                - row "99.9% uptime SLA with auto-failover Yes Yes Yes" [ref=e240]:
+                  - cell "99.9% uptime SLA with auto-failover" [ref=e241]
+                  - cell "Yes" [ref=e242]:
+                    - img "Yes" [ref=e243]
+                  - cell "Yes" [ref=e245]:
+                    - img "Yes" [ref=e246]
+                  - cell "Yes" [ref=e248]:
+                    - img "Yes" [ref=e249]
+                - row "Dedicated account manager included Yes No No" [ref=e251]:
+                  - cell "Dedicated account manager included" [ref=e252]
+                  - cell "Yes" [ref=e253]:
+                    - img "Yes" [ref=e254]
+                  - cell "No" [ref=e256]:
+                    - img "No" [ref=e257]
+                  - cell "No" [ref=e260]:
+                    - img "No" [ref=e261]
+                - row "30% lower cost vs. international providers Yes No No" [ref=e264]:
+                  - cell "30% lower cost vs. international providers" [ref=e265]
+                  - cell "Yes" [ref=e266]:
+                    - img "Yes" [ref=e267]
+                  - cell "No" [ref=e269]:
+                    - img "No" [ref=e270]
+                  - cell "No" [ref=e273]:
+                    - img "No" [ref=e274]
+          - generic [ref=e277]:
+            - paragraph [ref=e278]: Built For Your Team
+            - generic [ref=e279]:
+              - generic [ref=e280]:
+                - img [ref=e282]
+                - heading "Audience Title" [level=3] [ref=e286]
+                - paragraph [ref=e287]: Describe how they benefit.
+              - generic [ref=e288]:
+                - img [ref=e290]
+                - heading "Audience Title" [level=3] [ref=e293]
+                - paragraph [ref=e294]: Describe how they benefit.
+              - generic [ref=e295]:
+                - img [ref=e297]
+                - heading "Audience Title" [level=3] [ref=e300]
+                - paragraph [ref=e301]: Describe how they benefit.
+    - generic [ref=e302]:
+      - heading "Our Commitment to You" [level=2] [ref=e305]
+      - generic [ref=e307]:
+        - generic [ref=e308]:
+          - img [ref=e310]
+          - generic [ref=e312]:
+            - generic [ref=e313]: 30-Day Money-Back Guarantee
+            - generic [ref=e314]: Not satisfied? Full refund, no questions asked.
+        - generic [ref=e315]:
+          - img [ref=e317]
+          - generic [ref=e319]:
+            - generic [ref=e320]: 99.9% Uptime SLA
+            - generic [ref=e321]: We guarantee reliability. Downtime credits automatic.
+        - generic [ref=e322]:
+          - img [ref=e324]
+          - generic [ref=e326]:
+            - generic [ref=e327]: Zero-Risk Migration
+            - generic [ref=e328]: We handle everything. If migration fails, we pay.
+        - generic [ref=e329]:
+          - img [ref=e331]
+          - generic [ref=e333]:
+            - generic [ref=e334]: No Long-Term Lock-In
+            - generic [ref=e335]: Month-to-month available. Cancel anytime after trial.
+        - generic [ref=e336]:
+          - img [ref=e338]
+          - generic [ref=e340]:
+            - generic [ref=e341]: Price Protection
+            - generic [ref=e342]: Your rate locked for contract term. No surprise increases.
+    - generic [ref=e343]:
+      - heading "Your Sales Contact" [level=2] [ref=e346]
+      - generic [ref=e347]:
+        - generic [ref=e348]: AH
+        - generic [ref=e349]:
+          - generic [ref=e350]: Ahmed Habib
+          - generic [ref=e351]: Your dedicated account manager
+        - generic [ref=e352]:
+          - link "ahmed.habib@worldposta.com" [ref=e353] [cursor=pointer]:
+            - /url: mailto:ahmed.habib@worldposta.com
+            - img [ref=e354]
+            - text: ahmed.habib@worldposta.com
+          - link "+201234567890" [ref=e357] [cursor=pointer]:
+            - /url: tel:+201234567890
+            - img [ref=e358]
+            - text: "+201234567890"
+          - link "WhatsApp" [ref=e360] [cursor=pointer]:
+            - /url: https://wa.me/201234567890
+            - img [ref=e361]
+            - text: WhatsApp
+    - generic [ref=e364]:
+      - heading "Pricing Summary" [level=2] [ref=e365]: Pricing Summary
+      - generic [ref=e367]:
+        - table [ref=e369]:
+          - rowgroup [ref=e370]:
+            - row "Item Qty Unit Price Line Total" [ref=e371]:
+              - columnheader "Item" [ref=e372]
+              - columnheader "Qty" [ref=e373]
+              - columnheader "Unit Price" [ref=e374]
+              - columnheader "Line Total" [ref=e375]
+          - rowgroup [ref=e376]:
+            - row "Posta Business Plan 150 $3.47 per month $520.50 36-month term" [ref=e377]:
+              - cell "Posta Business Plan" [ref=e378]:
+                - generic [ref=e379]: Posta Business Plan
+              - cell "150" [ref=e380]
+              - cell "$3.47 per month" [ref=e381]:
+                - text: $3.47
+                - generic [ref=e382]: per month
+              - cell "$520.50 36-month term" [ref=e383]:
+                - text: $520.50
+                - generic [ref=e384]: 36-month term
+        - generic [ref=e385]:
+          - generic [ref=e386]:
+            - generic [ref=e387]: Monthly subtotal
+            - generic [ref=e388]: $520.50
+          - generic [ref=e389]:
+            - generic [ref=e390]: 36-month contract subtotal
+            - generic [ref=e391]: $18,738.00
+          - generic [ref=e392]: "Prices shown exclude VAT and applicable taxes. Accepted payment methods: Stripe, bank transfer, or agreed terms."
+          - generic [ref=e393]:
+            - generic [ref=e394]:
+              - text: Contract total
+              - generic [ref=e395]: 36 months
+            - generic [ref=e396]: $18,738.00
+    - generic [ref=e398]:
+      - heading "Recommended Add-ons" [level=2] [ref=e399]: Recommended Add-ons
+      - generic [ref=e401]:
+        - generic [ref=e402]:
+          - generic [ref=e403]: Test Cloud VM
+          - generic [ref=e404]: $10.00per unit
+        - generic [ref=e405]:
+          - generic [ref=e406]: Test Consulting
+          - generic [ref=e407]: $30.00
+        - generic [ref=e408]:
+          - generic [ref=e409]: Test SOC
+          - generic [ref=e410]: $100.00
+        - generic [ref=e411]:
+          - generic [ref=e412]: Test Firewall
+          - generic [ref=e413]: $25.00
+        - generic [ref=e414]:
+          - generic [ref=e415]: Test Plan
+          - generic [ref=e416]: $10.00
+        - generic [ref=e417]:
+          - generic [ref=e418]: Test SaaS
+          - generic [ref=e419]: $15.00
+    - generic [ref=e422]:
+      - generic [ref=e423]:
+        - generic [ref=e424]: Not quite right?
+        - generic [ref=e425]: Submit a counter-offer and we'll review it with you.
+      - button "Submit a Counter-Offer" [ref=e426] [cursor=pointer]
+    - generic [ref=e428]:
+      - generic [ref=e429]: Confirm & Sign
+      - generic [ref=e431]:
+        - heading "Accept This Proposal" [level=2] [ref=e432]
+        - paragraph [ref=e433]: Type your full name below to confirm your acceptance.
+        - generic [ref=e434]:
+          - generic [ref=e435]: Your full legal name (used as digital signature) *
+          - generic [ref=e436]:
+            - textbox "Your full legal name (used as digital signature)" [ref=e437]:
+              - /placeholder: Your full name
+            - generic [ref=e438]: "*"
+        - generic [ref=e439] [cursor=pointer]:
+          - checkbox "I have read and agree to the terms and conditions of this proposal." [ref=e440]
+          - generic [ref=e441]:
+            - text: I have read and agree to the
+            - link "terms and conditions" [ref=e442]:
+              - /url: "#"
+            - text: of this proposal.
+        - button "Confirm & Accept Proposal" [disabled] [ref=e443]
+    - contentinfo [ref=e444]:
+      - generic [ref=e445]:
+        - generic [ref=e446]: O
+        - text: Powered by OfferEdge
+      - generic [ref=e447]: WorldPosta Technology LLC · WPC-2026-00111
+  - button "Chat with support" [ref=e449] [cursor=pointer]:
+    - img [ref=e450]

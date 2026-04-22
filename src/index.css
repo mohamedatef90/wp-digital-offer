@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Barlow', -apple-system, 'Segoe UI', system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Aurora background — CSS vars used in repeating gradients (shadcn / tailwind plugin pattern) */
+:root {
+  --white: #fff;
+  --black: #000;
+  --transparent: transparent;
+  --blue-500: #3b82f6;
+  --indigo-300: #a5b4fc;
+  --blue-300: #93c5fd;
+  --violet-200: #ddd6fe;
+  --blue-400: #60a5fa;
+}
+
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+@utility animate-aurora {
+  animation: aurora 60s linear infinite;
+}
+
+@theme {
+  --color-dark-900: #0f1318;
+  --color-dark-800: #141a22;
+  --color-dark-700: #1a2230;
+  --color-dark-600: #202b3a;
+  --color-text-primary: #eef2f7;
+  --color-text-secondary: #7a93ad;
+  --color-text-muted: #6a8aa5;
+  --color-brand-green: #679a41;
+  --color-brand-green-light: #7db84d;
+  --color-brand-blue: #38bdf8;
+  --color-whatsapp: #25d366;
+}
+
+/* ── Light theme ─────────────────────────────────────── */
+[data-theme="light"] {
+  /* Surface hierarchy: dark-900 (page) → dark-800 (card) → dark-700 (inset) → dark-600 (input) */
+  --color-dark-900: #f0f4f8;      /* page / section background          */
+  --color-dark-800: #ffffff;      /* card / panel backgrounds            */
+  --color-dark-700: #f8fafc;      /* secondary surfaces (inset, headers) */
+  --color-dark-600: #edf1f7;      /* inputs, table headers, elevated     */
+  --color-text-primary:   #1a202c;
+  --color-text-secondary: #4a5568;
+  --color-text-muted:     #718096;
+  /* Darken brand-blue so it passes WCAG AA (4.5:1) on light backgrounds  */
+  --color-brand-blue:     #0284c7;
+}
+
+/* Card depth — replaces contrast provided by dark surfaces in dark mode */
+[data-theme="light"] .bg-dark-800 {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.05), 0 4px 24px rgb(0 0 0 / 0.04);
+}
+
+/* White/opacity borders invisible on light — swap to dark/opacity */
+[data-theme="light"] [class*="border-white/"] {
+  border-color: rgb(0 0 0 / 0.08) !important;
+}
+
+/* Divide lines (AboutSection stats grid — divide-white/[0.07]) */
+[data-theme="light"] [class*="divide-white/"] > * + * {
+  border-color: rgb(0 0 0 / 0.07) !important;
+}
+
+/* Table row hover feedback on light surfaces */
+[data-theme="light"] tbody tr:hover {
+  background-color: rgb(0 0 0 / 0.025) !important;
+}
+
+/* Logo images: gentler greyscale treatment for light backgrounds */
+[data-theme="light"] .logo-track img {
+  filter: grayscale(1) brightness(0.88);
+  opacity: 0.6;
+}
+[data-theme="light"] .logo-track div:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-track { background: #f0f4f8; }
+[data-theme="light"] ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUpFade {
+  from { opacity: 0; transform: scale(0.94) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes iconPop {
+  0%   { transform: scale(0.5); opacity: 0; }
+  60%  { transform: scale(1.15); opacity: 1; }
+  80%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+@keyframes logo-scroll-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-fade-up { animation: fadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-up-delay1 { animation: fadeUp 0.65s 0.12s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-up-delay2 { animation: fadeUp 0.65s 0.24s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-scale-up-fade { animation: scaleUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-icon-pop { animation: iconPop 0.55s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+.logo-track {
+  display: flex;
+  gap: 40px;
+  animation: logo-scroll-right 45s linear infinite;
+  width: fit-content;
+}
+.logo-track:hover { animation-play-state: paused; }
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-brand-blue) 0%, var(--color-brand-green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay1,
+  .animate-fade-up-delay2,
+  .animate-scale-up-fade,
+  .animate-icon-pop,
+  .animate-aurora {
+    animation: none;
+  }
+  .logo-track {
+    animation-play-state: paused;
+  }
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0f1318; }
+::-webkit-scrollbar-thumb { background: #202b3a; border-radius: 3px; }
