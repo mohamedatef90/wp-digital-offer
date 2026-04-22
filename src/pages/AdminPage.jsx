@@ -4,7 +4,7 @@ import toast from 'react-hot-toast'
 import {
   ExternalLink, Save, ChevronUp, ChevronDown, Plus, Trash2,
   LayoutGrid, CheckCircle2, BarChart2, TableProperties, Users,
-  FileText, Building2, UserCircle, CreditCard, Package, ShieldCheck,
+  FileText, Building2, CreditCard, Package, ShieldCheck,
   Layers, Eye, EyeOff, List, Tag, LayoutList, Minus,
   Sun, Moon, Monitor, Upload,
 } from 'lucide-react'
@@ -134,18 +134,16 @@ const SECTIONS = [
   { id: 'offer',       label: 'Offer Info',    Icon: FileText,    description: 'Client details, proposal number, dates, currency, and tax note.' },
   { id: 'products',    label: 'Products',       Icon: Package,     description: 'Product name, description, and content blocks shown on the offer.' },
   { id: 'company',     label: 'Company',        Icon: Building2,   description: 'Company profile, key stats, certifications, and trusted logos.' },
-  { id: 'contact',     label: 'Sales Contact',  Icon: UserCircle,  description: 'Account manager name, title, email, phone, and WhatsApp.' },
-  { id: 'pricing',     label: 'Pricing',        Icon: CreditCard,  description: 'Line items, quantities, unit prices, and recommended add-ons.' },
   { id: 'commitments', label: 'Commitments',    Icon: ShieldCheck, description: 'SLA guarantees and risk-reduction cards shown before the signature.' },
   { id: 'sections',    label: 'Visibility',     Icon: Layers,      description: 'Toggle which sections appear on the client-facing offer page.' },
 ]
 
 // Sidebar navigation groups
 const NAV_GROUPS = [
-  { label: 'Proposal',  ids: ['offer', 'products'] },
-  { label: 'Company',   ids: ['company', 'contact'] },
-  { label: 'Pricing',   ids: ['pricing', 'commitments'] },
-  { label: 'Settings',  ids: ['sections'] },
+  { label: 'Proposal',    ids: ['offer', 'products'] },
+  { label: 'Company',    ids: ['company'] },
+  { label: 'Commitments', ids: ['commitments'] },
+  { label: 'Settings',   ids: ['sections'] },
 ]
 
 // Which sections the admin can toggle on/off, in proposal-page order
@@ -950,7 +948,13 @@ function OfferInfoSection({ data, onChange }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Input label="Client Name" value={data.clientName} onChange={(e) => set('clientName', e.target.value)} />
           <Input label="Recipient Name" value={data.recipientName} onChange={(e) => set('recipientName', e.target.value)} />
-          <Input label="Client Logo URL" hint="leave blank for placeholder" value={data.clientLogo || ''} placeholder="https://…" onChange={(e) => set('clientLogo', e.target.value || null)} />
+          <CompanyLogoUrlField
+            label="Client Logo"
+            hint="leave blank for placeholder"
+            value={data.clientLogo || ''}
+            onUrlChange={(val) => set('clientLogo', val)}
+            onFileAsDataUrl={(val) => set('clientLogo', val)}
+          />
           <Input label="Proposal Number" value={data.proposalNumber} onChange={(e) => set('proposalNumber', e.target.value)} />
         </div>
       </SectionCard>
@@ -1152,78 +1156,6 @@ function CompanySection({ data, onChange }) {
   )
 }
 
-function ContactSection({ data, onChange }) {
-  const c = data.salesContact
-  const set = (key, val) => onChange({ ...data, salesContact: { ...c, [key]: val } })
-  return (
-    <SectionCard title="Sales Contact">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <Input label="Full Name" value={c.name} onChange={(e) => set('name', e.target.value)} />
-        <Input label="Initials" hint="shown in avatar" value={c.initials} onChange={(e) => set('initials', e.target.value)} />
-        <div className="sm:col-span-2">
-          <Input label="Title" value={c.title} onChange={(e) => set('title', e.target.value)} />
-        </div>
-        <Input label="Email" type="email" value={c.email} onChange={(e) => set('email', e.target.value)} />
-        <Input label="Phone" type="tel" value={c.phone} onChange={(e) => set('phone', e.target.value)} />
-        <Input label="WhatsApp number" hint="digits only, no +" value={c.whatsapp} onChange={(e) => set('whatsapp', e.target.value)} />
-      </div>
-    </SectionCard>
-  )
-}
-
-function PricingSection({ data, onChange }) {
-  const updateItem = (i, patch) =>
-    onChange({ ...data, lineItems: data.lineItems.map((it, j) => j === i ? { ...it, ...patch } : it) })
-
-  const updateAddOn = (i, patch) =>
-    onChange({ ...data, addOns: data.addOns.map((a, j) => j === i ? { ...a, ...patch } : a) })
-
-  return (
-    <div className="flex flex-col gap-4">
-      <SectionCard title="Line Items">
-        <div className="flex flex-col gap-4">
-          {data.lineItems.map((item, i) => (
-            <div key={item.id} className="grid grid-cols-2 sm:grid-cols-4 gap-3 items-end">
-              <div className="col-span-2 sm:col-span-1">
-                <Input label="Name" value={item.name} onChange={(e) => updateItem(i, { name: e.target.value })} />
-              </div>
-              <Input label="Quantity" type="number" min="1" value={item.quantity} onChange={(e) => updateItem(i, { quantity: Number(e.target.value) })} />
-              <Input label="Unit Price" type="number" step="0.01" min="0" value={item.unitPrice} onChange={(e) => updateItem(i, { unitPrice: Number(e.target.value) })} />
-              <SelectField label="Billing" options={[{ value: 'mo', label: '/ month' }, { value: 'yr', label: '/ year' }, { value: 'one-time', label: 'One-time' }]} value={item.billingCycle} onChange={(e) => updateItem(i, { billingCycle: e.target.value })} />
-            </div>
-          ))}
-          <AddBtn
-            label="Add line item"
-            onClick={() => onChange({ ...data, lineItems: [...data.lineItems, { id: Date.now(), name: '', quantity: 1, unitPrice: 0, billingCycle: 'mo' }] })}
-          />
-        </div>
-      </SectionCard>
-
-      <SectionCard title="Add-ons">
-        <div className="flex flex-col gap-3">
-          {data.addOns.map((addon, i) => (
-            <div key={addon.id} className="grid grid-cols-3 gap-3 items-end">
-              <div className="col-span-2">
-                <Input label="Add-on Name" value={addon.name} onChange={(e) => updateAddOn(i, { name: e.target.value })} />
-              </div>
-              <div className="flex items-end gap-2">
-                <Input label="Price" type="number" step="0.01" min="0" value={addon.price} onChange={(e) => updateAddOn(i, { price: Number(e.target.value) })} />
-                <IconBtn danger title="Remove" onClick={() => onChange({ ...data, addOns: data.addOns.filter((_, j) => j !== i) })}>
-                  <Trash2 size={13} />
-                </IconBtn>
-              </div>
-            </div>
-          ))}
-          <AddBtn
-            label="Add add-on"
-            onClick={() => onChange({ ...data, addOns: [...data.addOns, { id: Date.now(), name: '', price: 0, pricingModel: null }] })}
-          />
-        </div>
-      </SectionCard>
-    </div>
-  )
-}
-
 function CommitmentsSection({ data, onChange }) {
   const set = (commitments) => onChange({ ...data, commitments })
   return (
@@ -1419,8 +1351,6 @@ export default function AdminPage() {
     offer:       <OfferInfoSection    data={draft} onChange={setDraft} />,
     products:    <ProductsSection     data={draft} onChange={setDraft} />,
     company:     <CompanySection      data={draft} onChange={setDraft} />,
-    contact:     <ContactSection      data={draft} onChange={setDraft} />,
-    pricing:     <PricingSection      data={draft} onChange={setDraft} />,
     commitments: <CommitmentsSection  data={draft} onChange={setDraft} />,
     sections:    <SectionsSection     data={draft} onChange={setDraft} />,
   }
